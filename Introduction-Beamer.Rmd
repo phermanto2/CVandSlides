@@ -39,4 +39,6 @@ stat_density2d(aes(fill = after_stat(density)),
   theme_solarized()
 ```
 
-##Link to my Resume
+## Link to my Resume
+https://phermanto2.github.io/resume_paulus.pdf
+

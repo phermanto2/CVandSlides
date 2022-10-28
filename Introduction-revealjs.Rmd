@@ -40,3 +40,8 @@ stat_density2d(aes(fill = after_stat(density)),
   ggtitle("Bill Depth and Body Mass Density Plot")+
   theme_solarized()
 ```
+
+## Link to Resume
+https://phermanto2.github.io/resume_paulus.pdf
+
+
