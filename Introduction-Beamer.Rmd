@@ -1,0 +1,40 @@
+---
+title: "Introduction"
+author: "Paulus Hermanto"
+date: "2022-10-25"
+output: beamer_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Introduction to ME!
+Hello. I'm Paul. I will be introducing myself on subsequent slides, but promise you'll never ever share this with anyone??? Ok??? Ok.
+
+## A little bit about myself
+
+- Name: Paulus Hermanto
+- Birthday: 10/02/1998 
+- Where I grew up: Bogor, Indonesia
+- What program you're in: MS in Statistics
+- When you expect to graduate: I honestly do not know if I can even graduate at this point.
+
+## My Favorite Animal
+
+!['Here is a beluga whale'](beluga.jpeg)
+
+## My Favorite Plot
+```{r, warning=FALSE, message=FALSE}
+library(ggplot2)
+library(ggthemes)
+a<-read.csv('penguins.csv')
+ggplot(data = a, aes(x = bill_depth_mm, y = body_mass_g))+ 
+stat_density2d(aes(fill = after_stat(density)), 
+              geom = "tile",  
+              contour = F) +
+  scale_fill_distiller(palette = 'Pastel2')+
+  labs(x = "Body Mass in grams", y = "Bill depth in mm")+
+  ggtitle("Bill Depth and Body Mass Density Plot")+
+  theme_solarized()
+```
