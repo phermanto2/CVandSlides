@@ -9,3 +9,7 @@ This is my resume:
 This is a little bit about myself:
 
 [Introduction Slides](Introduction-Beamer.pdf)
+
+This is my HTML slides:
+
+[HTML Slides](Introduction-revealjs.html)
